@@ -1,0 +1,254 @@
+body{
+    margin: 0;
+    /* padding-right: 5rem; */
+    background: rgb(2,0,36);
+    background: linear-gradient(274deg, rgba(2,0,36,1) 0%, rgba(12,4,73,1) 0%, rgba(35,32,82,1) 100%);
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+li{
+    list-style: none;
+}
+
+button{
+    border: none;
+    transition: transform 0.6s;
+}
+
+button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition-duration: 0.6s;  
+}
+
+.container{
+    display: flex;
+    gap: 10rem;
+}
+
+#go-back{
+    height: 30px;
+    background-color: transparent;
+    display: none;
+    color: white;
+    position: absolute;
+    left: 25px;
+    top: 25px;
+    font-size: 40px;
+}
+
+.material-symbols-outlined{
+    font-size: 35px;
+}
+
+.search-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+    width: 100%;
+    position: absolute;
+    z-index: 99999;
+    /* display: none; */
+}
+
+.search-form{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.search-text{
+    height: 35px;
+    width: 200px;
+    border-radius: 50px;
+    background-color: f1f1f1;
+    font-size: 16px;
+    padding-left: 1rem;
+}
+
+.search-button{
+    height: 36px;
+    width: 100px;
+    border-radius: 50px;
+    background-color: f1f1f1;
+    font-size: 16px;
+    font-family: "Kanit", sans-serif;
+}
+
+.planet-container{
+    position: relative;
+    right: 16%;
+    display: flex;
+    gap: 3.5rem;
+    align-items: center;
+    width: 100vw;
+}
+
+.planet-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 3rem 13rem 0 0;
+    color: white;
+    font-family: 'Kanit', sans-serif;
+}
+
+.planet-details__header{
+    font-size: 45px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+}
+
+
+.planet-details__latin{
+    font-size: 25px;
+    font-style: italic;
+    color: #7f7f7f;
+}
+
+.planet-details__description{
+    font-size: 18px;
+    letter-spacing: 1.1px;
+}
+
+
+.planet-details__info{
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    font-weight: 300;
+}
+
+#planet-info{
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 40px;
+    border: 2px solid rgba(255, 255, 255, 0.164);
+    width: 400px;
+    height: 140px;
+    font-family: "Kanit", sans-serif;
+    position: fixed;
+    top: 579px;
+    right: 550px;
+    border-radius: 10px;
+}
+
+
+#planet-0{
+    margin-top: 2rem;
+    width: 338px;
+    height: 600px;
+    background: radial-gradient(circle at center, #fffbdb, #ffcb6b, #ff8400);
+    border-radius: 50%;
+    box-shadow: 0 0 40px 20px rgba(255, 132, 0, 0.8), 0 0 100px 40px rgba(255, 132, 0, 0.5), 0 0 200px 80px rgba(255, 132, 0, 0.3);
+}
+
+#planet-1{
+    width: 40px;
+    height: 40px;
+    background: radial-gradient(circle, #bfbfbf 40%, #8c8c8c 80%);
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.6s;
+}
+#planet-1:hover{
+    transform: scale(1.3);
+}
+
+#planet-2{
+    width: 50px;
+    height: 50px;
+    background: radial-gradient(circle, #ffcc66 40%, #ff9900 80%);
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.6s;
+}
+#planet-2:hover{
+    transform: scale(1.2);
+}
+#planet-3{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: relative;
+    background: radial-gradient(circle, #0080ff 20%, #0066cc 80%);
+    overflow: hidden;
+    transition: transform 0.6s;
+}
+
+#planet-3:hover{
+    transform: scale(1.2);
+}
+
+#planet-4{
+    width: 25px;
+    height: 25px;
+    background-color: #ff6347; /* Reddish color */
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.6s;
+}
+
+#planet-4::after{
+    content: '';
+    width: 30px;
+    height: 30px;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 10%, rgba(255, 255, 255, 0) 80%);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#planet-4:hover{
+    transform: scale(1.3);
+}
+#planet-5{
+    background-color: rgb(189, 149, 96);
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+}
+#planet-6{
+    background-color: burlywood;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+#planet-6::after{
+    content: '';
+    border: 5px solid 	#ffe1ab;
+    position: relative;
+    right: 21px;
+    width: var(--width, 140px);
+    border-radius: 50%;
+    transform: skewY(20deg);
+    display: block;
+
+}
+#planet-7{
+    width: 90px;
+    height: 90px;
+    background-color: #afeeee; /* Pale blue-green */
+    border-radius: 50%;
+}
+#planet-8{
+    width: 90px;
+    height: 90px;
+    background-color: #2b78e4; /* Deep blue */
+    border-radius: 50%;
+}

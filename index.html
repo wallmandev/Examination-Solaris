@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solaris - Christoffer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="script.js" type="module" defer></script>
+</head>
+<body>
+    
+    <button id="go-back">
+        <span class="material-symbols-outlined">
+            undo
+        </span>
+    </button>
+
+    <div class="container">
+        
+        <div class="search-container">
+            <form class="search-form">
+                <input class="search-text" type="text" name="name" placeholder="Explore a planet">
+                <button class="search-button" type="submit">Search</button>
+            </form>
+        </div>
+
+        <div class="planet-container">
+        </div>
+
+        <div id="planet-info">
+        </div>
+
+        <div class="planet-details">
+            <div class="planet-details__header">
+                <h1></h1>
+            </div>
+            <div class="planet-details__subhead">
+                <p class="planet-details__latin"></p>
+                <p class="planet-details__description"></p>
+            </div>
+            <div class="planet-details__info">
+                <div id="planet-details__fromsun"></div>
+                <p class="planet-details__temp">TEMP DAG : <div id="planet-temp__day"></div></p>
+                <p class="planet-details__temp">TEMP NATT : <div id="planet-temp__night"></div></p>
+            </div>
+        </div>
+        
+    </div>
+    
+</body>
+</html>
